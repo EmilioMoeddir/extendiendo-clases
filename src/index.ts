@@ -63,7 +63,7 @@ class ListaDeProductos extends ListaDeCosas {
     const obj = remove(this.cosas, (elementos) => elementos.id === id)[0];
     return obj;
   }
-
+  // Tuve que borrar el tipado :void del metodo
   getSortedByPrice(order: "asc" | "desc") {
     return orderBy(this.cosas, ["price"], [order]);
   }
